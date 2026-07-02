@@ -1,171 +1,192 @@
-::: {align="center"}
-`<img src="https://capsule-render.vercel.app/api?type=waving&color=0:312e81,50:6d28d9,100:1e1b4b&height=200&section=header&text=Mimansh%20Neupane%20Pokharel&fontSize=42&fontColor=ffffff"/>`{=html}
+<div align="center">
 
-`<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=24&duration=3000&pause=1000&center=true&lines=CS+Undergraduate;AI+Systems+Engineer;Full+Stack+Developer;LLM+%26+RAG+Enthusiast"/>`{=html}
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:312e81,40:4c1d95,70:6d28d9,100:1e1b4b&height=220&section=header&text=Mimansh%20Neupane%20Pokharel&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38"/>
 
-`<a href="https://www.linkedin.com/in/mimansh-neupane/">`{=html}`<img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin"/>`{=html}`</a>`{=html}
-`<a href="mailto:mimansh_np@proton.me">`{=html}`<img src="https://img.shields.io/badge/Email-Contact-E11D48?style=for-the-badge&logo=gmail"/>`{=html}`</a>`{=html}
-`<a href="https://github.com/walterwhite91">`{=html}`<img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github"/>`{=html}`</a>`{=html}
-:::
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=24&duration=3000&pause=1000&center=true&vCenter=true&width=850&color=A78BFA&lines=Computer+Science+Undergraduate;AI+Systems+Engineer;Backend+%26+Infrastructure+Developer;Building+Practical+LLM+Applications;Open+Source+Contributor"/>
 
-------------------------------------------------------------------------
+<br>
 
-# 👨‍💻 About Me
+<a href="https://www.linkedin.com/in/mimansh-neupane/">
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
 
-Computer Science undergraduate building intelligent software systems
-with a focus on:
+<a href="mailto:mimansh_np@proton.me">
+<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
 
--   Large Language Models and RAG systems
--   AI agents and automation
--   Backend engineering and scalable APIs
--   Cloud infrastructure and self-hosted systems
--   Open-source development
+<!--<a href="YOUR_PORTFOLIO_URL">
+<img src="https://img.shields.io/badge/Portfolio-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white"/>
+</a>-->
 
-Currently exploring efficient AI deployment, multimodal systems, and
-developer-focused tools.
+<br><br>
 
-------------------------------------------------------------------------
+![](https://komarev.com/ghpvc/?username=walterwhite91&style=for-the-badge&color=6D28D9)
 
-# 🛠️ Technical Stack
+</div>
 
-**Languages:** Python, C++, C, JavaScript, TypeScript, Bash
+---
 
-**Frontend:** React, Next.js, Tailwind CSS
+# 🙏 About Me
 
-**Backend:** FastAPI, Flask, Node.js
+I'm a **Computer Science undergraduate** passionate about building intelligent software systems that combine **Artificial Intelligence**, **backend engineering**, and **scalable infrastructure**.
 
-**Databases:** PostgreSQL, MongoDB, SQLite
+Currently interested in:
 
-**Infrastructure:** Linux, Docker, Nginx, Git, Cloud
+- Large Language Models (LLMs)
+- Retrieval-Augmented Generation (RAG)
+- AI Agents & Automation
+- Backend Architecture
+- Linux & Self-hosted Infrastructure
+- Open Source
 
-------------------------------------------------------------------------
+---
 
-# 🤖 AI / Machine Learning Expertise
+# Current Focus
 
-  -----------------------------------------------------------------------
-  Domain                  Proficiency             Details
-  ----------------------- ----------------------- -----------------------
-  Large Language Models   Advanced                LLM applications,
-                                                  inference workflows,
-                                                  model integration
+```yaml
+Building:
+  - Lumos
+  - SANKAT
+  - HelixDB
+  - SkillOpt
 
-  Retrieval-Augmented     Advanced                Vector retrieval,
-  Generation                                      context pipelines,
-                                                  knowledge systems
+Learning:
+  - Distributed Systems
+  - AI Infrastructure
+  - High Performance Databases
 
-  Model Fine-Tuning       Intermediate            QLoRA, PEFT,
-                                                  adapter-based
-                                                  optimization
+Interested In:
+  - Search Systems
+  - ML Systems
+  - Open Source
+```
 
-  AI Agents               Intermediate            Automated workflows and
-                                                  intelligent
-                                                  orchestration
+---
 
-  NLP Systems             Intermediate            Text processing and
-                                                  semantic retrieval
+# Tech Stack
 
-  Computer Vision         Intermediate            OCR and document
-                                                  understanding pipelines
+### Languages
 
-  Speech AI               Intermediate            Speech-to-text system
-                                                  exploration
+<p>
+<img src="https://skillicons.dev/icons?i=python,cpp,c,js,ts,bash"/>
+</p>
 
-  AI Infrastructure       Intermediate            Local deployment and
-                                                  optimization
-  -----------------------------------------------------------------------
+### Frameworks
 
-------------------------------------------------------------------------
+<p>
+<img src="https://skillicons.dev/icons?i=react,nextjs,fastapi,flask,nodejs"/>
+</p>
+
+### Databases
+
+<p>
+<img src="https://skillicons.dev/icons?i=postgres,mongodb,sqlite"/>
+</p>
+
+### Infrastructure
+
+<p>
+<img src="https://skillicons.dev/icons?i=linux,docker,git,github,nginx"/>
+</p>
+
+---
+
+# AI / Machine Learning Expertise
+
+| Domain | Proficiency | Details |
+|:--|:--:|:--|
+| Large Language Models | Advanced | LLM applications, inference workflows, model integration |
+| Retrieval-Augmented Generation | Advanced | Vector retrieval, context pipelines, knowledge systems |
+| Model Fine-Tuning | Intermediate | QLoRA, PEFT, adapter-based optimization |
+| AI Agents | Intermediate | Automated workflows and intelligent orchestration |
+| NLP Systems | Intermediate | Text processing and semantic retrieval |
+| Computer Vision | Intermediate | OCR and document understanding pipelines |
+| Speech AI | Intermediate | Speech-to-text system exploration |
+| AI Infrastructure | Intermediate | Local deployment and optimization |
+
+---
 
 # 🚀 Featured Projects
 
-## Lumos --- AI Workflow Platform
+### Lumos
+Hybrid AI platform integrating local LLMs, RAG, OCR, voice pipelines, and intelligent routing.
 
-AI platform focused on modular AI services, LLM workflows, RAG, and
-low-resource deployment.
+**Stack:** Python • FastAPI • RAG • LLMs
 
-**Stack:** Python, FastAPI, LLMs, RAG
+---
 
-------------------------------------------------------------------------
+### SANKAT
+Offline-first emergency response and disaster management platform with ML-assisted credibility assessment.
 
-## SANKAT --- Offline Emergency Response Network
+**Stack:** Python • React • FastAPI • Scikit-Learn
 
-Offline-first emergency communication platform with ML-based credibility
-assessment.
+---
 
-**Stack:** Python, FastAPI, React, TypeScript, Scikit-Learn
+### Ask-M
+AI-powered academic assistant using retrieval pipelines, Gemma, and QLoRA.
 
-------------------------------------------------------------------------
+**Stack:** FastAPI • MongoDB • Supabase • Gemma
 
-## Ask-M --- Academic AI Assistant
+---
 
-AI-powered learning assistant using retrieval pipelines and optimized
-LLM inference.
+### KDE Nepali Localization
 
-**Stack:** FastAPI, MongoDB, Gemma, QLoRA, Supabase
+Contributing Nepali translations to KDE to improve accessibility for native speakers.
 
-------------------------------------------------------------------------
+---
 
-## Healthcare Database Management System
+# GitHub Analytics
 
-Healthcare workflow management system with role-based access and
-database integration.
+<p align="center">
 
-**Stack:** C++, Qt, Qt SQL
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=walterwhite91&show_icons=true&theme=tokyonight&hide_border=true"/>
 
-------------------------------------------------------------------------
+<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=walterwhite91&theme=tokyonight&hide_border=true"/>
 
-# 📈 Experience Focus
+</p>
 
--   Building LLM-powered applications and AI pipelines
--   Designing backend systems and APIs
--   Developing full-stack products
--   Managing Linux servers and cloud infrastructure
--   Contributing to open-source communities
+<p align="center">
 
-------------------------------------------------------------------------
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=walterwhite91&layout=compact&theme=tokyonight&hide_border=true"/>
 
-# 🏆 Achievements
+</p>
 
--   AI/ML scholarship recipient
--   KDE Nepali localization contributor
--   Technical workshop organizer
--   Led engineering teams for AI and software projects
+---
 
-------------------------------------------------------------------------
+# Contribution Graph
 
-# 📊 GitHub Analytics
+<p align="center">
 
-::: {align="center"}
-`<img height="170" src="https://github-readme-stats.vercel.app/api?username=walterwhite91&show_icons=true&theme=tokyonight"/>`{=html}
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=walterwhite91&theme=tokyo-night&hide_border=true"/>
 
-`<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=walterwhite91&theme=tokyonight"/>`{=html}
-:::
+</p>
 
-------------------------------------------------------------------------
+---
 
-# 🐍 Contribution Snake
+# Contribution Snake
 
-::: {align="center"}
-`<img src="https://raw.githubusercontent.com/walterwhite91/walterwhite91/gh-pages/github-contribution-grid-snake.svg"/>`{=html}
-:::
+<p align="center">
 
-------------------------------------------------------------------------
+<img src="https://raw.githubusercontent.com/walterwhite91/walterwhite91/gh-pages/github-contribution-grid-snake.svg"/>
 
-# 🎯 Current Focus
+</p>
 
-``` yaml
-learning:
-  - Advanced LLM architectures
-  - Efficient AI inference
-  - Distributed systems
+---
 
-building:
-  - AI-powered educational platforms
-  - RAG systems
-  - Developer tools
+# Open to Collaborate
 
-exploring:
-  - Local AI deployment
-  - Multimodal intelligence
-  - Systems programming
-```
+- AI Engineering
+- Backend Development
+- Open Source
+- Linux Infrastructure
+- Research Projects
+
+---
+
+<div align="center">
+
+### *"Building software that is practical, scalable, and accessible."*
+
+⭐ If you like my work, consider following or collaborating on one of my projects.
+
+</div>
