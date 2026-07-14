@@ -163,16 +163,6 @@ Contributing Nepali translations to KDE to improve accessibility for native spea
 
 ---
 
-# Contribution Snake
-
-<p align="center">
-
-<img src="https://raw.githubusercontent.com/walterwhite91/walterwhite91/gh-pages/github-contribution-grid-snake.svg"/>
-
-</p>
-
----
-
 # Open to Collaborate
 
 - AI Engineering
