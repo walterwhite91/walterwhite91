@@ -69,34 +69,12 @@ Currently interested in:
 
 ---
 
-# AI / Machine Learning Expertise
-
-| Domain | Proficiency | Details |
-|:--|:--:|:--|
-| Large Language Models | Advanced | LLM applications, inference workflows, model integration |
-| Retrieval-Augmented Generation | Advanced | Vector retrieval, context pipelines, knowledge systems |
-| Model Fine-Tuning | Intermediate | QLoRA, PEFT, adapter-based optimization |
-| AI Agents | Intermediate | Automated workflows and intelligent orchestration |
-| NLP Systems | Intermediate | Text processing and semantic retrieval |
-| Computer Vision | Intermediate | OCR and document understanding pipelines |
-| Speech AI | Intermediate | Speech-to-text system exploration |
-| AI Infrastructure | Intermediate | Local deployment and optimization |
-
----
-
 # GitHub Analytics
 
 <p align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=walterwhite91&show_icons=true&theme=tokyonight&hide_border=true"/>
 
 <img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=walterwhite91&theme=tokyonight&hide_border=true"/>
-
-</p>
-
-<p align="center">
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=walterwhite91&layout=compact&theme=tokyonight&hide_border=true"/>
 
 </p>
 
