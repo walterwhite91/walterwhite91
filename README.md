@@ -41,28 +41,6 @@ Currently interested in:
 
 ---
 
-# Current Focus
-
-```yaml
-Building:
-  - Lumos
-  - SANKAT
-  - HelixDB
-  - SkillOpt
-
-Learning:
-  - Distributed Systems
-  - AI Infrastructure
-  - High Performance Databases
-
-Interested In:
-  - Search Systems
-  - ML Systems
-  - Open Source
-```
-
----
-
 # Tech Stack
 
 ### Languages
@@ -103,35 +81,6 @@ Interested In:
 | Computer Vision | Intermediate | OCR and document understanding pipelines |
 | Speech AI | Intermediate | Speech-to-text system exploration |
 | AI Infrastructure | Intermediate | Local deployment and optimization |
-
----
-
-# 🚀 Featured Projects
-
-### Lumos
-Hybrid AI platform integrating local LLMs, RAG, OCR, voice pipelines, and intelligent routing.
-
-**Stack:** Python • FastAPI • RAG • LLMs
-
----
-
-### SANKAT
-Offline-first emergency response and disaster management platform with ML-assisted credibility assessment.
-
-**Stack:** Python • React • FastAPI • Scikit-Learn
-
----
-
-### Ask-M
-AI-powered academic assistant using retrieval pipelines, Gemma, and QLoRA.
-
-**Stack:** FastAPI • MongoDB • Supabase • Gemma
-
----
-
-### KDE Nepali Localization
-
-Contributing Nepali translations to KDE to improve accessibility for native speakers.
 
 ---
 
