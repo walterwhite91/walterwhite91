@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:312e81,40:4c1d95,70:6d28d9,100:1e1b4b&height=220&section=header&text=Mimansh%20Neupane%20Pokharel&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38"/>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=24&duration=3000&pause=1000&center=true&vCenter=true&width=850&color=A78BFA&lines=Computer+Science+Undergraduate;Researcher × Builder; AI+Systems+Engineer;Backend+%26+Infrastructure+Developer;Building+Practical+LLM+Applications;Open+Source+Contributor"/>
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=24&duration=3000&pause=1000&center=true&vCenter=true&width=850&color=A78BFA&lines=Computer+Science+Undergraduate;Researcher+%C3%97+Builder;AI+Systems+Engineer;Backend+%26+Infrastructure+Developer;Building+Practical+LLM+Applications;Open+Source+Contributor&v=2"/>
 
 <br>
 
