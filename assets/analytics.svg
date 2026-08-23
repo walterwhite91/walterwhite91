@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="200" viewBox="0 0 760 200" role="img" aria-label="GitHub analytics: 795 total contributions since Jul 3, 2022, current streak 2 days (Aug 22 - Aug 23), longest streak 7 days (Mar 12 - Mar 18)">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#302d39" />
+      <stop offset="0.58" stop-color="#3d3846" />
+      <stop offset="1" stop-color="#353248" />
+    </linearGradient>
+  </defs>
+  <rect width="760" height="200" rx="10" fill="url(#paper)" stroke="#f1ece1" stroke-opacity=".14" />
+
+  <line x1="253" y1="36" x2="253" y2="164" stroke="#7d9fc4" stroke-opacity=".3" />
+  <line x1="507" y1="36" x2="507" y2="164" stroke="#7d9fc4" stroke-opacity=".3" />
+
+  <g text-anchor="middle" font-family="Inter, system-ui, sans-serif">
+    <text x="126" y="86" font-size="34" font-weight="800" fill="#f1ece1">795</text>
+    <text x="126" y="114" font-size="12" fill="#f1ece1" fill-opacity=".85">Total Contributions</text>
+    <text x="126" y="136" font-size="11" font-family="ui-monospace, monospace" fill="#7d9fc4">Jul 3, 2022 - Present</text>
+
+    <circle cx="380" cy="76" r="34" fill="none" stroke="#9f8cff" stroke-opacity=".22" stroke-width="5" />
+    <circle cx="380" cy="76" r="34" fill="none" stroke="#9f8cff" stroke-width="5" stroke-linecap="round"
+      stroke-dasharray="30.52 213.63" transform="rotate(-90 380 76)" />
+    <text x="380" y="83" font-size="24" font-weight="800" fill="#f1ece1">2</text>
+    <text x="380" y="114" font-size="12" font-weight="700" fill="#f1ece1" fill-opacity=".85">Current Streak</text>
+    <text x="380" y="136" font-size="11" font-family="ui-monospace, monospace" fill="#7d9fc4">Aug 22 - Aug 23</text>
+
+    <text x="633" y="86" font-size="34" font-weight="800" fill="#f1ece1">7</text>
+    <text x="633" y="114" font-size="12" fill="#f1ece1" fill-opacity=".85">Longest Streak</text>
+    <text x="633" y="136" font-size="11" font-family="ui-monospace, monospace" fill="#7d9fc4">Mar 12 - Mar 18</text>
+  </g>
+</svg>

@@ -43,7 +43,7 @@ I'm a **Computer Science undergraduate** passionate about building intelligent s
 
 <div align="center">
 
-<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=walterwhite91&hide_border=true&background=3D3846&ring=9F8CFF&fire=7D9FC4&currStreakLabel=F1ECE1&sideLabels=F1ECE1&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=7D9FC4" alt="GitHub streak statistics" />
+<img src="./assets/analytics.svg" width="100%" alt="GitHub streak statistics" />
 
 </div>
 
@@ -51,7 +51,7 @@ I'm a **Computer Science undergraduate** passionate about building intelligent s
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=walterwhite91&bg_color=3d3846&color=f1ece1&line=9f8cff&point=ffffff&area=true&hide_border=true" width="100%" alt="GitHub contribution graph" />
+<img src="./assets/contribution-graph.svg" width="100%" alt="GitHub contribution graph" />
 
 </div>
 
