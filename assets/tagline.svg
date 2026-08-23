@@ -1,26 +1,44 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="780" height="30" viewBox="0 0 780 30" role="img" aria-label="Computer Science Undergraduate, Researcher x Builder, AI Systems Engineer, Backend and Infrastructure Developer, Building Practical LLM Applications, Open Source Contributor">
   <style>
-    text { opacity: 0; animation: fadeCycle 18s ease-in-out infinite; }
+    .title { animation: titleCycle 24s steps(1, end) infinite; }
     #w1 { animation-delay: 0s; }
-    #w2 { animation-delay: 3s; }
-    #w3 { animation-delay: 6s; }
-    #w4 { animation-delay: 9s; }
-    #w5 { animation-delay: 12s; }
-    #w6 { animation-delay: 15s; }
-    @keyframes fadeCycle {
-      0%     { opacity: 0; }
-      2%     { opacity: 1; }
-      14%    { opacity: 1; }
-      16.6%  { opacity: 0; }
-      100%   { opacity: 0; }
+    #w2 { animation-delay: 4s; }
+    #w3 { animation-delay: 8s; }
+    #w4 { animation-delay: 12s; }
+    #w5 { animation-delay: 16s; }
+    #w6 { animation-delay: 20s; }
+
+    .scramble { animation: scrambleCycle 4s steps(1, end) infinite; }
+    #s2 { animation-delay: .25s; }
+    #s3 { animation-delay: .5s; }
+    #s4 { animation-delay: .75s; }
+
+    @keyframes titleCycle {
+      0%, 12.49% { opacity: 1; }
+      12.5%, 100% { opacity: 0; }
+    }
+    @keyframes scrambleCycle {
+      0%, 74.99% { opacity: 0; }
+      75%, 81.24% { opacity: .72; }
+      81.25%, 100% { opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .title, .scramble { animation: none !important; opacity: 0; }
+      #w1 { opacity: 1; }
     }
   </style>
   <g text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="18" font-weight="500" fill="#7d9fc4">
-    <text id="w1" x="390" y="21">AI Systems Engineer</text>
-    <text id="w2" x="390" y="21">Open Source Contributor</text>
-    <text id="w3" x="390" y="21">Computer Science Undergraduate</text>
-    <text id="w4" x="390" y="21">Researcher × Builder</text>
-    <text id="w5" x="390" y="21">Building Practical LLM Applications</text>
-    <text id="w6" x="390" y="21">Backend &amp; Infrastructure Developer</text>
+    <text id="w1" class="title" x="390" y="21" opacity="1">Researcher × Builder</text>
+    <text id="w2" class="title" x="390" y="21" opacity="0">Computer Science Undergraduate</text>
+    <text id="w3" class="title" x="390" y="21" opacity="0">AI Systems Engineer</text>
+    <text id="w4" class="title" x="390" y="21" opacity="0">Backend &amp; Infrastructure Developer</text>
+    <text id="w5" class="title" x="390" y="21" opacity="0">Building Practical LLM Applications</text>
+    <text id="w6" class="title" x="390" y="21" opacity="0">Open Source Contributor</text>
+  </g>
+  <g text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="17" font-weight="500" letter-spacing="1.2">
+    <text id="s1" class="scramble" x="390" y="21" fill="#7d9fc4" opacity="0">R3S#A8C4E5 × B7I1D3R</text>
+    <text id="s2" class="scramble" x="390" y="21" fill="#9f8cff" opacity="0">KQ7M2N9V · X4P8L1TZ</text>
+    <text id="s3" class="scramble" x="390" y="21" fill="#7d9fc4" opacity="0">0X9AF2 // M7N4Q8 · R1</text>
+    <text id="s4" class="scramble" x="390" y="21" fill="#9f8cff" opacity="0">D3V8L0P3R_91 // A1</text>
   </g>
 </svg>
