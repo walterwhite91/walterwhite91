@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="270" viewBox="0 0 800 270" role="img" aria-labelledby="title description">
+  <title id="title">Mimansh</title>
+  <desc id="description">Researcher, builder, computer science undergraduate, and AI systems developer.</desc>
+  <style>
+    .pulse { animation: pulse 6s ease-in-out infinite; }
+    .draw { stroke-dasharray: 460; animation: draw 8s ease-in-out infinite; }
+    @keyframes pulse { 0%, 100% { opacity: .35 } 50% { opacity: .8 } }
+    @keyframes draw { 0% { stroke-dashoffset: 460 } 30%, 80% { stroke-dashoffset: 0 } 100% { stroke-dashoffset: -460 } }
+  </style>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#302d39" />
+      <stop offset="0.58" stop-color="#3d3846" />
+      <stop offset="1" stop-color="#353248" />
+    </linearGradient>
+    <radialGradient id="glow" cx="65%" cy="22%" r="70%">
+      <stop offset="0" stop-color="#9f8cff" stop-opacity=".18" />
+      <stop offset="1" stop-color="#9f8cff" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="minorGrid" x="24" y="24" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#7d9fc4" stroke-width=".5" stroke-opacity=".16" />
+    </pattern>
+    <pattern id="majorGrid" x="24" y="24" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M100 0H0V100" fill="none" stroke="#7d9fc4" stroke-width=".75" stroke-opacity=".28" />
+    </pattern>
+  </defs>
+
+  <rect width="800" height="270" rx="8" fill="url(#paper)" />
+  <rect width="800" height="270" rx="8" fill="url(#glow)" />
+  <rect x="24" y="24" width="752" height="222" fill="url(#minorGrid)" />
+  <rect x="24" y="24" width="752" height="222" fill="url(#majorGrid)" />
+  <rect x="24" y="24" width="752" height="222" fill="none" stroke="#f1ece1" stroke-opacity=".68" />
+
+  <g stroke="#f1ece1">
+    <path d="M18 24h12M24 18v12M770 24h12M776 18v12M18 246h12M24 240v12M770 246h12M776 240v12" />
+  </g>
+
+  <text x="38" y="43" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="10" letter-spacing="2">PROFILE / 01</text>
+  <text x="762" y="43" text-anchor="end" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="10" letter-spacing="2">MNP · 2026</text>
+  <circle class="pulse" cx="769" cy="39" r="2.5" fill="#9f8cff" />
+  <line x1="34" y1="52" x2="766" y2="52" stroke="#7d9fc4" stroke-opacity=".42" />
+
+  <g class="draw" fill="none" stroke="#9f8cff" stroke-opacity=".8">
+    <line x1="168" y1="88" x2="632" y2="88" />
+  </g>
+  <path d="M162 88l8-4v8zM638 88l-8-4v8z" fill="#9f8cff" />
+  <rect x="365" y="80" width="70" height="16" fill="#3b3745" />
+  <text x="400" y="92" text-anchor="middle" fill="#9f8cff" font-family="ui-monospace, monospace" font-size="10" letter-spacing="1.5">MNP / 07</text>
+
+  <text x="400" y="151" text-anchor="middle" fill="#f1ece1" font-family="Inter, system-ui, sans-serif" font-size="62" font-weight="800" letter-spacing="8">MIMANSH</text>
+  <line x1="165" y1="163" x2="635" y2="163" stroke="#f1ece1" stroke-opacity=".8" />
+
+  <g font-family="ui-monospace, monospace" font-size="11" letter-spacing="1.15">
+    <circle cx="172" cy="196" r="8" fill="none" stroke="#9f8cff" />
+    <text x="172" y="200" text-anchor="middle" fill="#9f8cff" font-weight="700">1</text>
+    <text x="188" y="200" fill="#f1ece1">RESEARCHER × BUILDER</text>
+
+    <circle cx="386" cy="196" r="8" fill="none" stroke="#9f8cff" />
+    <text x="386" y="200" text-anchor="middle" fill="#9f8cff" font-weight="700">2</text>
+    <text x="402" y="200" fill="#f1ece1">CS UNDERGRADUATE</text>
+
+    <circle cx="574" cy="196" r="8" fill="none" stroke="#9f8cff" />
+    <text x="574" y="200" text-anchor="middle" fill="#9f8cff" font-weight="700">3</text>
+    <text x="590" y="200" fill="#f1ece1">AI SYSTEMS</text>
+  </g>
+
+  <line x1="34" y1="222" x2="766" y2="222" stroke="#7d9fc4" stroke-opacity=".42" />
+  <text x="38" y="239" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="9" letter-spacing="1.4">BUILDING PRACTICAL · SCALABLE · ACCESSIBLE SOFTWARE</text>
+  <text x="762" y="239" text-anchor="end" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="9" letter-spacing="1.4">REV 1.0</text>
+</svg>

@@ -1,108 +1,69 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:312e81,40:4c1d95,70:6d28d9,100:1e1b4b&height=220&section=header&text=MIMANSH&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38"/>
+<img src="./assets/header.svg" width="100%" alt="Mimansh — Researcher, builder, and computer science undergraduate" />
 
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=24&duration=3000&pause=1000&center=true&vCenter=true&width=850&color=A78BFA&lines=Computer+Science+Undergraduate;Researcher+%C3%97+Builder;AI+Systems+Engineer;Backend+%26+Infrastructure+Developer;Building+Practical+LLM+Applications;Open+Source+Contributor&v=2"/>
+<br />
 
-<br>
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=500&size=18&duration=2800&pause=900&center=true&vCenter=true&width=780&color=7D9FC4&lines=Computer+Science+Undergraduate;Researcher+%C3%97+Builder;AI+Systems+Engineer;Backend+%26+Infrastructure+Developer;Building+Practical+LLM+Applications;Open+Source+Contributor" alt="Computer Science Undergraduate; Researcher × Builder; AI Systems Engineer; Backend and Infrastructure Developer; Building Practical LLM Applications; Open Source Contributor" />
 
-<a href="https://www.linkedin.com/in/mimansh-neupane/">
-<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
+<br /><br />
 
-<a href="mailto:mimansh_np@proton.me">
-<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a>
-
-<!--<a href="YOUR_PORTFOLIO_URL">
-<img src="https://img.shields.io/badge/Portfolio-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white"/>
-</a>-->
-
-<br><br>
-
-![](https://komarev.com/ghpvc/?username=walterwhite91&style=for-the-badge&color=6D28D9)
+<a href="https://www.linkedin.com/in/mimansh-neupane/"><img src="https://img.shields.io/badge/LinkedIn-7D9FC4?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=3D3846" alt="LinkedIn" /></a>
+&nbsp;
+<a href="mailto:mimansh_np@proton.me"><img src="https://img.shields.io/badge/Email-9F8CFF?style=for-the-badge&logo=protonmail&logoColor=white&labelColor=3D3846" alt="Email" /></a>
+&nbsp;
+<img src="https://komarev.com/ghpvc/?username=walterwhite91&style=for-the-badge&color=7D9FC4&labelColor=3D3846" alt="Profile views" />
 
 </div>
 
----
-
-# 🙏 About Me
+## About Me
 
 I'm a **Computer Science undergraduate** passionate about building intelligent software systems that combine **Artificial Intelligence**, **backend engineering**, and **scalable infrastructure**.
 
-Currently building with:
+### Currently building with
 
-- Large Language Models (LLMs)
-- Retrieval-Augmented Generation (RAG)
-- AI Agents & Automation
-- Backend Architecture
-- Linux & Self-hosted Infrastructure
-- Open Source
+| | |
+| :--- | :--- |
+| Large Language Models (LLMs) | Retrieval-Augmented Generation (RAG) |
+| AI Agents & Automation | Backend Architecture |
+| Linux & Self-hosted Infrastructure | Open Source |
 
----
+## Tech Stack
 
-# Tech Stack
+| Area | Stack |
+| :--- | :--- |
+| **Languages** | <img src="https://skillicons.dev/icons?i=python,cpp,c,js,ts,bash" alt="Python, C++, C, JavaScript, TypeScript, Bash" /> |
+| **Frameworks** | <img src="https://skillicons.dev/icons?i=react,nextjs,fastapi,flask,nodejs" alt="React, Next.js, FastAPI, Flask, Node.js" /> |
+| **Databases** | <img src="https://skillicons.dev/icons?i=postgres,mongodb,sqlite" alt="PostgreSQL, MongoDB, SQLite" /> |
+| **Infrastructure** | <img src="https://skillicons.dev/icons?i=linux,docker,git,github,nginx" alt="Linux, Docker, Git, GitHub, Nginx" /> |
 
-### Languages
-
-<p>
-<img src="https://skillicons.dev/icons?i=python,cpp,c,js,ts,bash"/>
-</p>
-
-### Frameworks
-
-<p>
-<img src="https://skillicons.dev/icons?i=react,nextjs,fastapi,flask,nodejs"/>
-</p>
-
-### Databases
-
-<p>
-<img src="https://skillicons.dev/icons?i=postgres,mongodb,sqlite"/>
-</p>
-
-### Infrastructure
-
-<p>
-<img src="https://skillicons.dev/icons?i=linux,docker,git,github,nginx"/>
-</p>
-
----
-
-# GitHub Analytics
-
-<p align="center">
-
-
-<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=walterwhite91&theme=tokyonight&hide_border=true"/>
-
-</p>
-
----
-
-# Contribution Graph
-
-<p align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=walterwhite91&theme=tokyo-night&hide_border=true"/>
-
-</p>
-
----
-
-# Open to Collaborate
-
-- AI Engineering
-- Backend Development
-- Open Source
-- Linux Infrastructure
-- Research Projects
-
----
+## GitHub Analytics
 
 <div align="center">
 
-### *"Building software that is practical, scalable, and accessible."*
+<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=walterwhite91&hide_border=true&background=3D3846&ring=9F8CFF&fire=7D9FC4&currStreakLabel=F1ECE1&sideLabels=F1ECE1&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=7D9FC4" alt="GitHub streak statistics" />
+
+</div>
+
+## Contribution Graph
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=walterwhite91&bg_color=3d3846&color=f1ece1&line=9f8cff&point=ffffff&area=true&hide_border=true" width="100%" alt="GitHub contribution graph" />
+
+</div>
+
+## Open to Collaborate
+
+**AI Engineering** · **Backend Development** · **Open Source** · **Linux Infrastructure** · **Research Projects**
+
+<br />
+
+<div align="center">
+
+<img src="./assets/footer.svg" width="100%" alt="Building software that is practical, scalable, and accessible" />
+
+<br />
 
 ⭐ If you like my work, consider following or collaborating on one of my projects.
 
