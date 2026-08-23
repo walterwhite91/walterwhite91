@@ -76,7 +76,7 @@
   </g>
 
   <text x="38" y="43" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="10" letter-spacing="2">PROFILE</text>
-  <text x="762" y="43" text-anchor="end" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="10" letter-spacing="2">MNP · 2026</text>
+  <text x="762" y="43" text-anchor="end" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="10" letter-spacing="2">walterwhite91</text>
   <circle class="pulse" cx="769" cy="39" r="2.5" fill="#9f8cff" />
   <line x1="34" y1="52" x2="766" y2="52" stroke="#7d9fc4" stroke-opacity=".42" />
 
@@ -100,5 +100,4 @@
 
   <line x1="34" y1="222" x2="766" y2="222" stroke="#7d9fc4" stroke-opacity=".42" />
   <text x="38" y="239" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="9" letter-spacing="1.4">BUILDING PRACTICAL · SCALABLE · ACCESSIBLE SOFTWARE</text>
-  <text x="762" y="239" text-anchor="end" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="9" letter-spacing="1.4">REV 1.0</text>
 </svg>
