@@ -156,7 +156,7 @@ def render_analytics(total, since_dt, streaks):
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="760" height="220" viewBox="0 0 760 220" role="img" aria-label="GitHub analytics: {total} total contributions since {since_label}, current streak {cur} days ({cur_range}), longest streak {longest} days ({longest_range})">
   {transparent_theme_css()}
 
-  <text x="28" y="20" class="mute-text" font-family="ui-monospace, monospace" font-size="10" letter-spacing="2">FIG. 02    GITHUB ANALYTICS</text>
+  <text x="28" y="20" class="mute-text" font-family="ui-monospace, monospace" font-size="10" letter-spacing="2">GITHUB ANALYTICS</text>
   <text x="730" y="20" text-anchor="end" class="mute-text" font-family="ui-monospace, monospace" font-size="10" letter-spacing="1.6">LIVE DATA · @WALTERWHITE91</text>
   <circle class="live-dot" cx="740" cy="16" r="2.5" />
   <line x1="20" y1="32" x2="740" y2="32" class="guide" stroke-opacity=".52" />
@@ -263,7 +263,7 @@ def render_contribution_graph(days):
     </linearGradient>
   </defs>
 
-  <text x="28" y="20" class="mute-text" font-family="ui-monospace, monospace" font-size="10" letter-spacing="2">FIG. 03    CONTRIBUTION TRACE</text>
+  <text x="28" y="20" class="mute-text" font-family="ui-monospace, monospace" font-size="10" letter-spacing="2">CONTRIBUTION TRACE</text>
   <text x="730" y="20" text-anchor="end" class="mute-text" font-family="ui-monospace, monospace" font-size="10" letter-spacing="1.6">31 DAY WINDOW · LIVE</text>
   <circle class="live-dot" cx="740" cy="16" r="2.5" />
   <line x1="20" y1="32" x2="740" y2="32" class="guide" stroke-opacity=".52" />

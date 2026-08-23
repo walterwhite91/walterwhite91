@@ -30,7 +30,7 @@
     }
   </style>
 
-  <text x="28" y="20" class="mute-text" font-family="ui-monospace, monospace" font-size="10" letter-spacing="2">FIG. 02    GITHUB ANALYTICS</text>
+  <text x="28" y="20" class="mute-text" font-family="ui-monospace, monospace" font-size="10" letter-spacing="2">GITHUB ANALYTICS</text>
   <text x="730" y="20" text-anchor="end" class="mute-text" font-family="ui-monospace, monospace" font-size="10" letter-spacing="1.6">LIVE DATA · @WALTERWHITE91</text>
   <circle class="live-dot" cx="740" cy="16" r="2.5" />
   <line x1="20" y1="32" x2="740" y2="32" class="guide" stroke-opacity=".52" />
