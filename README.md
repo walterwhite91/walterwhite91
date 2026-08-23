@@ -39,15 +39,13 @@ I'm a **Computer Science undergraduate** passionate about building intelligent s
 | **Databases** | <img src="https://skillicons.dev/icons?i=postgres,mongodb,sqlite" alt="PostgreSQL, MongoDB, SQLite" /> |
 | **Infrastructure** | <img src="https://skillicons.dev/icons?i=linux,docker,git,github,nginx" alt="Linux, Docker, Git, GitHub, Nginx" /> |
 
-## GitHub Analytics
-
 <div align="center">
 
 <img src="./assets/analytics.svg" width="100%" alt="GitHub streak statistics" />
 
 </div>
 
-## Contribution Graph
+<br />
 
 <div align="center">
 

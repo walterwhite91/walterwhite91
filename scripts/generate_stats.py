@@ -14,8 +14,6 @@ LOGIN = "walterwhite91"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ASSETS = os.path.join(ROOT, "assets")
 
-PAPER = ["#302d39", "#3d3846", "#353248"]
-INK = "#f1ece1"
 MUTE = "#7d9fc4"
 ACCENT = "#9f8cff"
 
@@ -109,6 +107,40 @@ def fmt_range(a, b):
     return f"{short(a)} - {short(b)}"
 
 
+def transparent_theme_css():
+    """Theme-aware blueprint ink on a fully transparent canvas."""
+    return '''<style>
+    .ink-text { fill: #3d3846; }
+    .mute-text { fill: #607d9b; }
+    .accent-text { fill: #6f5bd3; }
+    .guide { stroke: #7d9fc4; }
+    .accent-stroke { stroke: #6f5bd3; }
+    .data-point { fill: #3d3846; stroke: #6f5bd3; }
+    .accent-stop { stop-color: #6f5bd3; }
+    .live-dot { fill: #6f5bd3; animation: livePulse 5s ease-in-out infinite; }
+    .trace { animation: traceDraw 10s ease-in-out infinite; }
+    @keyframes livePulse { 0%, 100% { opacity: .35; } 50% { opacity: 1; } }
+    @keyframes traceDraw {
+      0% { stroke-dasharray: 0 1; opacity: .35; }
+      28%, 86% { stroke-dasharray: 1 0; opacity: 1; }
+      100% { stroke-dasharray: 0 1; opacity: .35; }
+    }
+    @media (prefers-color-scheme: dark) {
+      .ink-text { fill: #f1ece1; }
+      .mute-text { fill: #7d9fc4; }
+      .accent-text { fill: #9f8cff; }
+      .guide { stroke: #7d9fc4; }
+      .accent-stroke { stroke: #9f8cff; }
+      .data-point { fill: #f1ece1; stroke: #9f8cff; }
+      .accent-stop { stop-color: #9f8cff; }
+      .live-dot { fill: #9f8cff; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .live-dot, .trace { animation: none; }
+    }
+  </style>'''
+
+
 def render_analytics(total, since_dt, streaks):
     since_label = since_dt.strftime("%b %-d, %Y")
     cur = streaks["current"]
@@ -121,34 +153,40 @@ def render_analytics(total, since_dt, streaks):
     frac = min(cur / 14.0, 1.0) if cur else 0.0
     dash = circumference * frac
 
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="760" height="200" viewBox="0 0 760 200" role="img" aria-label="GitHub analytics: {total} total contributions since {since_label}, current streak {cur} days ({cur_range}), longest streak {longest} days ({longest_range})">
-  <defs>
-    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="{PAPER[0]}" />
-      <stop offset="0.58" stop-color="{PAPER[1]}" />
-      <stop offset="1" stop-color="{PAPER[2]}" />
-    </linearGradient>
-  </defs>
-  <rect width="760" height="200" rx="10" fill="url(#paper)" stroke="{INK}" stroke-opacity=".14" />
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="760" height="220" viewBox="0 0 760 220" role="img" aria-label="GitHub analytics: {total} total contributions since {since_label}, current streak {cur} days ({cur_range}), longest streak {longest} days ({longest_range})">
+  {transparent_theme_css()}
 
-  <line x1="253" y1="36" x2="253" y2="164" stroke="{MUTE}" stroke-opacity=".3" />
-  <line x1="507" y1="36" x2="507" y2="164" stroke="{MUTE}" stroke-opacity=".3" />
+  <text x="28" y="20" class="mute-text" font-family="ui-monospace, monospace" font-size="10" letter-spacing="2">FIG. 02    GITHUB ANALYTICS</text>
+  <text x="730" y="20" text-anchor="end" class="mute-text" font-family="ui-monospace, monospace" font-size="10" letter-spacing="1.6">LIVE DATA · @WALTERWHITE91</text>
+  <circle class="live-dot" cx="740" cy="16" r="2.5" />
+  <line x1="20" y1="32" x2="740" y2="32" class="guide" stroke-opacity=".52" />
+  <path d="M14 32h12M20 26v12M734 32h12M740 26v12M14 184h12M20 178v12M734 184h12M740 178v12" class="guide" fill="none" />
+
+  <line x1="253" y1="54" x2="253" y2="166" class="guide" stroke-opacity=".28" />
+  <line x1="507" y1="54" x2="507" y2="166" class="guide" stroke-opacity=".28" />
 
   <g text-anchor="middle" font-family="Inter, system-ui, sans-serif">
-    <text x="126" y="86" font-size="34" font-weight="800" fill="{INK}">{total}</text>
-    <text x="126" y="114" font-size="12" fill="{INK}" fill-opacity=".85">Total Contributions</text>
-    <text x="126" y="136" font-size="11" font-family="ui-monospace, monospace" fill="{MUTE}">{since_label} - Present</text>
+    <text x="126" y="104" font-size="36" font-weight="800" class="ink-text">{total}</text>
+    <text x="126" y="132" font-size="12" font-weight="650" class="ink-text">Total Contributions</text>
+    <text x="126" y="153" font-size="10" font-family="ui-monospace, monospace" class="mute-text">{since_label} — Present</text>
 
-    <circle cx="380" cy="76" r="{r}" fill="none" stroke="{ACCENT}" stroke-opacity=".22" stroke-width="5" />
-    <circle cx="380" cy="76" r="{r}" fill="none" stroke="{ACCENT}" stroke-width="5" stroke-linecap="round"
-      stroke-dasharray="{dash:.2f} {circumference:.2f}" transform="rotate(-90 380 76)" />
-    <text x="380" y="83" font-size="24" font-weight="800" fill="{INK}">{cur}</text>
-    <text x="380" y="114" font-size="12" font-weight="700" fill="{INK}" fill-opacity=".85">Current Streak</text>
-    <text x="380" y="136" font-size="11" font-family="ui-monospace, monospace" fill="{MUTE}">{cur_range}</text>
+    <circle cx="380" cy="94" r="{r}" fill="none" class="accent-stroke" stroke-opacity=".18" stroke-width="5" />
+    <circle cx="380" cy="94" r="{r}" fill="none" class="accent-stroke" stroke-width="5" stroke-linecap="round"
+      stroke-dasharray="{dash:.2f} {circumference:.2f}" transform="rotate(-90 380 94)" />
+    <text x="380" y="102" font-size="25" font-weight="800" class="ink-text">{cur}</text>
+    <text x="380" y="140" font-size="12" font-weight="700" class="ink-text">Current Streak</text>
+    <text x="380" y="158" font-size="10" font-family="ui-monospace, monospace" class="mute-text">{cur_range}</text>
 
-    <text x="633" y="86" font-size="34" font-weight="800" fill="{INK}">{longest}</text>
-    <text x="633" y="114" font-size="12" fill="{INK}" fill-opacity=".85">Longest Streak</text>
-    <text x="633" y="136" font-size="11" font-family="ui-monospace, monospace" fill="{MUTE}">{longest_range}</text>
+    <text x="633" y="104" font-size="36" font-weight="800" class="ink-text">{longest}</text>
+    <text x="633" y="132" font-size="12" font-weight="650" class="ink-text">Longest Streak</text>
+    <text x="633" y="153" font-size="10" font-family="ui-monospace, monospace" class="mute-text">{longest_range}</text>
+  </g>
+
+  <line x1="20" y1="184" x2="740" y2="184" class="guide" stroke-opacity=".52" />
+  <g class="mute-text" font-family="ui-monospace, monospace" font-size="8" letter-spacing="1.25">
+    <text x="28" y="204">SOURCE / GITHUB GRAPHQL</text>
+    <text x="380" y="204" text-anchor="middle">WINDOW / ACCOUNT LIFETIME</text>
+    <text x="732" y="204" text-anchor="end">REFRESH / DAILY</text>
   </g>
 </svg>
 '''
@@ -206,38 +244,46 @@ def render_contribution_graph(days):
 
     x_labels = []
     for i, d in enumerate(dates):
+        if i % 3 != 0 and i != len(dates) - 1:
+            continue
         day_num = int(d.split("-")[2])
         x_labels.append(f'<text x="{px(i):.2f}" y="{bottom+18}" text-anchor="middle" font-size="10" fill="{MUTE}" font-family="ui-monospace, monospace">{day_num}</text>')
 
     dots = []
     for i, (x, y) in enumerate(points):
         if counts[i] > 0:
-            dots.append(f'<circle cx="{x:.2f}" cy="{y:.2f}" r="3.4" fill="{INK}" stroke="{ACCENT}" stroke-width="1.4" />')
+            dots.append(f'<circle cx="{x:.2f}" cy="{y:.2f}" r="3.4" class="data-point" stroke-width="1.4" />')
 
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="760" height="320" viewBox="0 0 760 320" role="img" aria-label="Mimansh's contribution graph, last 31 days">
+  {transparent_theme_css()}
   <defs>
-    <linearGradient id="paper2" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="{PAPER[0]}" />
-      <stop offset="0.58" stop-color="{PAPER[1]}" />
-      <stop offset="1" stop-color="{PAPER[2]}" />
-    </linearGradient>
     <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="{ACCENT}" stop-opacity=".38" />
-      <stop offset="1" stop-color="{ACCENT}" stop-opacity="0" />
+      <stop offset="0" class="accent-stop" stop-opacity=".28" />
+      <stop offset="1" class="accent-stop" stop-opacity="0" />
     </linearGradient>
   </defs>
-  <rect width="760" height="320" rx="10" fill="url(#paper2)" stroke="{INK}" stroke-opacity=".14" />
-  <text x="380" y="34" text-anchor="middle" font-size="15" font-weight="700" fill="{INK}" font-family="Inter, system-ui, sans-serif">Mimansh's Contribution Graph</text>
+
+  <text x="28" y="20" class="mute-text" font-family="ui-monospace, monospace" font-size="10" letter-spacing="2">FIG. 03    CONTRIBUTION TRACE</text>
+  <text x="730" y="20" text-anchor="end" class="mute-text" font-family="ui-monospace, monospace" font-size="10" letter-spacing="1.6">31 DAY WINDOW · LIVE</text>
+  <circle class="live-dot" cx="740" cy="16" r="2.5" />
+  <line x1="20" y1="32" x2="740" y2="32" class="guide" stroke-opacity=".52" />
+  <path d="M14 32h12M20 26v12M734 32h12M740 26v12M14 286h12M20 280v12M734 286h12M740 280v12" class="guide" fill="none" />
 
   <g>{''.join(grid_lines)}</g>
   <g>{''.join(y_labels)}</g>
   <g>{''.join(x_labels)}</g>
-  <text x="20" y="{top_pad + plot_h/2:.2f}" text-anchor="middle" font-size="10" fill="{MUTE}" font-family="ui-monospace, monospace" transform="rotate(-90 20 {top_pad + plot_h/2:.2f})">Contributions</text>
-  <text x="{left + plot_w/2:.2f}" y="304" text-anchor="middle" font-size="10" fill="{MUTE}" font-family="ui-monospace, monospace">Days</text>
+  <text x="20" y="{top_pad + plot_h/2:.2f}" text-anchor="middle" font-size="10" class="mute-text" font-family="ui-monospace, monospace" transform="rotate(-90 20 {top_pad + plot_h/2:.2f})">Contributions</text>
 
   <path d="{area_path}" fill="url(#areaFill)" stroke="none" />
-  <path d="{line_path}" fill="none" stroke="{ACCENT}" stroke-width="2.2" stroke-linecap="round" />
+  <path class="trace accent-stroke" pathLength="1" d="{line_path}" fill="none" stroke-width="2.2" stroke-linecap="round" />
   {''.join(dots)}
+
+  <line x1="20" y1="286" x2="740" y2="286" class="guide" stroke-opacity=".52" />
+  <g class="mute-text" font-family="ui-monospace, monospace" font-size="8" letter-spacing="1.25">
+    <text x="28" y="306">SOURCE / GITHUB GRAPHQL</text>
+    <text x="380" y="306" text-anchor="middle">WINDOW / LAST 31 DAYS</text>
+    <text x="732" y="306" text-anchor="end">REFRESH / DAILY</text>
+  </g>
 </svg>
 '''
     with open(os.path.join(ASSETS, "contribution-graph.svg"), "w") as f:
