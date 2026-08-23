@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="30" viewBox="0 0 780 30" role="img" aria-label="Computer Science Undergraduate, Researcher x Builder, AI Systems Engineer, Backend and Infrastructure Developer, Building Practical LLM Applications, Open Source Contributor">
+  <style>
+    text { opacity: 0; animation: fadeCycle 18s ease-in-out infinite; }
+    #w1 { animation-delay: 0s; }
+    #w2 { animation-delay: 3s; }
+    #w3 { animation-delay: 6s; }
+    #w4 { animation-delay: 9s; }
+    #w5 { animation-delay: 12s; }
+    #w6 { animation-delay: 15s; }
+    @keyframes fadeCycle {
+      0%     { opacity: 0; }
+      2%     { opacity: 1; }
+      14%    { opacity: 1; }
+      16.6%  { opacity: 0; }
+      100%   { opacity: 0; }
+    }
+  </style>
+  <g text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="18" font-weight="500" fill="#7d9fc4">
+    <text id="w1" x="390" y="21">AI Systems Engineer</text>
+    <text id="w2" x="390" y="21">Open Source Contributor</text>
+    <text id="w3" x="390" y="21">Computer Science Undergraduate</text>
+    <text id="w4" x="390" y="21">Researcher × Builder</text>
+    <text id="w5" x="390" y="21">Building Practical LLM Applications</text>
+    <text id="w6" x="390" y="21">Backend &amp; Infrastructure Developer</text>
+  </g>
+</svg>

@@ -17,7 +17,7 @@
   <rect x="20" y="20" width="760" height="110" fill="none" stroke="#f1ece1" stroke-opacity=".65" />
   <path d="M14 20h12M20 14v12M774 20h12M780 14v12M14 130h12M20 124v12M774 130h12M780 124v12" stroke="#f1ece1" />
 
-  <text x="36" y="40" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="9" letter-spacing="2">CLOSING NOTE / 02</text>
+  <text x="36" y="40" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="9" letter-spacing="2">CLOSING NOTE</text>
   <text x="764" y="40" text-anchor="end" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="9" letter-spacing="2">STATUS · OPEN TO COLLABORATE</text>
   <line x1="32" y1="50" x2="768" y2="50" stroke="#7d9fc4" stroke-opacity=".42" />
 

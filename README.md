@@ -4,14 +4,16 @@
 
 <br />
 
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=500&size=18&duration=2800&pause=900&center=true&vCenter=true&width=780&color=7D9FC4&lines=Computer+Science+Undergraduate;Researcher+%C3%97+Builder;AI+Systems+Engineer;Backend+%26+Infrastructure+Developer;Building+Practical+LLM+Applications;Open+Source+Contributor" alt="Computer Science Undergraduate; Researcher × Builder; AI Systems Engineer; Backend and Infrastructure Developer; Building Practical LLM Applications; Open Source Contributor" />
+<img src="./assets/tagline.svg" width="780" alt="Computer Science Undergraduate; Researcher × Builder; AI Systems Engineer; Backend and Infrastructure Developer; Building Practical LLM Applications; Open Source Contributor" />
 
 <br /><br />
 
 <a href="https://www.linkedin.com/in/mimansh-neupane/"><img src="https://img.shields.io/badge/LinkedIn-7D9FC4?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=3D3846" alt="LinkedIn" /></a>
 &nbsp;
 <a href="mailto:mimansh_np@proton.me"><img src="https://img.shields.io/badge/Email-9F8CFF?style=for-the-badge&logo=protonmail&logoColor=white&labelColor=3D3846" alt="Email" /></a>
-&nbsp;
+
+<br /><br />
+
 <img src="https://komarev.com/ghpvc/?username=walterwhite91&style=for-the-badge&color=7D9FC4&labelColor=3D3846" alt="Profile views" />
 
 </div>
