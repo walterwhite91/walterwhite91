@@ -46,6 +46,15 @@
     }
   </style>
   <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#302d39" />
+      <stop offset="0.58" stop-color="#3d3846" />
+      <stop offset="1" stop-color="#353248" />
+    </linearGradient>
+    <radialGradient id="glow" cx="65%" cy="22%" r="70%">
+      <stop offset="0" stop-color="#9f8cff" stop-opacity=".18" />
+      <stop offset="1" stop-color="#9f8cff" stop-opacity="0" />
+    </radialGradient>
     <pattern id="minorGrid" x="24" y="24" width="20" height="20" patternUnits="userSpaceOnUse">
       <path d="M20 0H0V20" fill="none" stroke="#7d9fc4" stroke-width=".5" stroke-opacity=".16" />
     </pattern>
@@ -56,6 +65,8 @@
     <clipPath id="sliceBottom"><rect x="120" y="132" width="560" height="22" /></clipPath>
   </defs>
 
+  <rect width="800" height="270" rx="8" fill="url(#paper)" />
+  <rect width="800" height="270" rx="8" fill="url(#glow)" />
   <rect x="24" y="24" width="752" height="222" fill="url(#minorGrid)" />
   <rect x="24" y="24" width="752" height="222" fill="url(#majorGrid)" />
   <rect x="24" y="24" width="752" height="222" fill="none" stroke="#f1ece1" stroke-opacity=".68" />
