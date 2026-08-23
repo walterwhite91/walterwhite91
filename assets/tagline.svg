@@ -1,44 +1,88 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="780" height="30" viewBox="0 0 780 30" role="img" aria-label="Computer Science Undergraduate, Researcher x Builder, AI Systems Engineer, Backend and Infrastructure Developer, Building Practical LLM Applications, Open Source Contributor">
   <style>
-    .title { animation: titleCycle 24s steps(1, end) infinite; }
-    #w1 { animation-delay: 0s; }
-    #w2 { animation-delay: 4s; }
-    #w3 { animation-delay: 8s; }
-    #w4 { animation-delay: 12s; }
-    #w5 { animation-delay: 16s; }
-    #w6 { animation-delay: 20s; }
+    text { opacity: 0; animation-duration: 26s; animation-timing-function: steps(1, end); animation-iteration-count: infinite; }
 
-    .scramble { animation: scrambleCycle 4s steps(1, end) infinite; }
-    #s2 { animation-delay: .25s; }
-    #s3 { animation-delay: .5s; }
-    #s4 { animation-delay: .75s; }
+    /* AI Systems Engineer — 0.0s -> 2.6s */
+    #w3 { animation-name: cycleW3; }
+    @keyframes cycleW3 {
+      0%, 0.3% { opacity: 0; } 0.6% { opacity: .3; } 0.9% { opacity: 1; }
+      1.2% { opacity: .35; } 1.5% { opacity: 1; }
+      9.2% { opacity: 1; } 10.0% { opacity: 0; } 100% { opacity: 0; }
+    }
 
-    @keyframes titleCycle {
-      0%, 12.49% { opacity: 1; }
-      12.5%, 100% { opacity: 0; }
+    /* Open Source Contributor — 3.1s -> 6.5s */
+    #w6 { animation-name: cycleW6; }
+    @keyframes cycleW6 {
+      0%, 11.92% { opacity: 0; } 12.22% { opacity: .3; } 12.52% { opacity: 1; }
+      12.82% { opacity: .35; } 13.12% { opacity: 1; }
+      23.8% { opacity: 1; } 25.0% { opacity: 0; } 100% { opacity: 0; }
     }
-    @keyframes scrambleCycle {
-      0%, 74.99% { opacity: 0; }
-      75%, 81.24% { opacity: .72; }
-      81.25%, 100% { opacity: 0; }
+
+    /* Researcher × Builder — 7.2s -> 9.5s */
+    #w1 { animation-name: cycleW1; }
+    @keyframes cycleW1 {
+      0%, 27.69% { opacity: 0; } 27.99% { opacity: .3; } 28.29% { opacity: 1; }
+      28.59% { opacity: .35; } 28.89% { opacity: 1; }
+      35.54% { opacity: 1; } 36.54% { opacity: 0; } 100% { opacity: 0; }
     }
+
+    /* Backend & Infrastructure Developer — 10.1s -> 14.3s */
+    #w4 { animation-name: cycleW4; }
+    @keyframes cycleW4 {
+      0%, 38.85% { opacity: 0; } 39.15% { opacity: .3; } 39.45% { opacity: 1; }
+      39.75% { opacity: .35; } 40.05% { opacity: 1; }
+      54.0% { opacity: 1; } 55.0% { opacity: 0; } 100% { opacity: 0; }
+    }
+
+    /* Computer Science Undergraduate — 15.0s -> 18.8s */
+    #w2 { animation-name: cycleW2; }
+    @keyframes cycleW2 {
+      0%, 57.69% { opacity: 0; } 57.99% { opacity: .3; } 58.29% { opacity: 1; }
+      58.59% { opacity: .35; } 58.89% { opacity: 1; }
+      71.31% { opacity: 1; } 72.31% { opacity: 0; } 100% { opacity: 0; }
+    }
+
+    /* Building Practical LLM Applications — 19.4s -> 23.0s, then a longer dark pause before the loop wraps */
+    #w5 { animation-name: cycleW5; }
+    @keyframes cycleW5 {
+      0%, 74.62% { opacity: 0; } 74.92% { opacity: .3; } 75.22% { opacity: 1; }
+      75.52% { opacity: .35; } 75.82% { opacity: 1; }
+      87.46% { opacity: 1; } 88.46% { opacity: 0; } 100% { opacity: 0; }
+    }
+
+    .glyph { opacity: 0; animation-duration: 26s; animation-timing-function: steps(1, end); animation-iteration-count: infinite; }
+    #g3 { animation-name: glyphW3; }
+    @keyframes glyphW3 { 0%, 0.2% { opacity: 0; } 0.35% { opacity: .7; } 0.55% { opacity: 0; } 100% { opacity: 0; } }
+    #g6 { animation-name: glyphW6; }
+    @keyframes glyphW6 { 0%, 12.1% { opacity: 0; } 12.3% { opacity: .7; } 12.5% { opacity: 0; } 100% { opacity: 0; } }
+    #g1 { animation-name: glyphW1; }
+    @keyframes glyphW1 { 0%, 27.85% { opacity: 0; } 28.05% { opacity: .7; } 28.25% { opacity: 0; } 100% { opacity: 0; } }
+    #g4 { animation-name: glyphW4; }
+    @keyframes glyphW4 { 0%, 39.0% { opacity: 0; } 39.2% { opacity: .7; } 39.4% { opacity: 0; } 100% { opacity: 0; } }
+    #g2 { animation-name: glyphW2; }
+    @keyframes glyphW2 { 0%, 57.85% { opacity: 0; } 58.05% { opacity: .7; } 58.25% { opacity: 0; } 100% { opacity: 0; } }
+    #g5 { animation-name: glyphW5; }
+    @keyframes glyphW5 { 0%, 74.78% { opacity: 0; } 74.98% { opacity: .7; } 75.18% { opacity: 0; } 100% { opacity: 0; } }
+
     @media (prefers-reduced-motion: reduce) {
-      .title, .scramble { animation: none !important; opacity: 0; }
-      #w1 { opacity: 1; }
+      text, .glyph { animation: none !important; opacity: 0; }
+      #w3 { opacity: 1; }
     }
   </style>
   <g text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="18" font-weight="500" fill="#7d9fc4">
-    <text id="w1" class="title" x="390" y="21" opacity="1">Researcher × Builder</text>
-    <text id="w2" class="title" x="390" y="21" opacity="0">Computer Science Undergraduate</text>
-    <text id="w3" class="title" x="390" y="21" opacity="0">AI Systems Engineer</text>
-    <text id="w4" class="title" x="390" y="21" opacity="0">Backend &amp; Infrastructure Developer</text>
-    <text id="w5" class="title" x="390" y="21" opacity="0">Building Practical LLM Applications</text>
-    <text id="w6" class="title" x="390" y="21" opacity="0">Open Source Contributor</text>
+    <text id="w1" x="390" y="21">Researcher × Builder</text>
+    <text id="w2" x="390" y="21">Computer Science Undergraduate</text>
+    <text id="w3" x="390" y="21">AI Systems Engineer</text>
+    <text id="w4" x="390" y="21">Backend &amp; Infrastructure Developer</text>
+    <text id="w5" x="390" y="21">Building Practical LLM Applications</text>
+    <text id="w6" x="390" y="21">Open Source Contributor</text>
   </g>
   <g text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="17" font-weight="500" letter-spacing="1.2">
-    <text id="s1" class="scramble" x="390" y="21" fill="#7d9fc4" opacity="0">R3S#A8C4E5 × B7I1D3R</text>
-    <text id="s2" class="scramble" x="390" y="21" fill="#9f8cff" opacity="0">KQ7M2N9V · X4P8L1TZ</text>
-    <text id="s3" class="scramble" x="390" y="21" fill="#7d9fc4" opacity="0">0X9AF2 // M7N4Q8 · R1</text>
-    <text id="s4" class="scramble" x="390" y="21" fill="#9f8cff" opacity="0">D3V8L0P3R_91 // A1</text>
+    <text id="g3" class="glyph" x="390" y="21" fill="#9f8cff">0X9AF2 // M7N4Q8</text>
+    <text id="g6" class="glyph" x="390" y="21" fill="#7d9fc4">KQ7M2N9V · X4P8L1TZ</text>
+    <text id="g1" class="glyph" x="390" y="21" fill="#9f8cff">R3S#A8C4E5 × B7I1D3R</text>
+    <text id="g4" class="glyph" x="390" y="21" fill="#7d9fc4">D3V8L0P3R_91 // A1</text>
+    <text id="g2" class="glyph" x="390" y="21" fill="#9f8cff">C5 · U9N4D3R6</text>
+    <text id="g5" class="glyph" x="390" y="21" fill="#7d9fc4">LL2M // B7U1LD9</text>
   </g>
 </svg>
