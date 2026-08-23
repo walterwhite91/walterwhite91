@@ -21,11 +21,14 @@ I'm a **Computer Science undergraduate** passionate about building intelligent s
 
 ### Currently building with
 
-| | |
-| :--- | :--- |
-| Large Language Models (LLMs) | Retrieval-Augmented Generation (RAG) |
-| AI Agents & Automation | Backend Architecture |
-| Linux & Self-hosted Infrastructure | Open Source |
+```
+❯ Large Language Models (LLMs)
+❯ Retrieval-Augmented Generation (RAG)
+❯ AI Agents & Automation
+❯ Backend Architecture
+❯ Linux & Self-hosted Infrastructure
+❯ Open Source
+```
 
 ## Tech Stack
 
