@@ -12,8 +12,6 @@
 &nbsp;
 <a href="mailto:mimansh_np@proton.me"><img src="https://img.shields.io/badge/Email-9F8CFF?style=for-the-badge&logo=protonmail&logoColor=white&labelColor=3D3846" alt="Email" /></a>
 
-<br /><br />
-
 <img src="https://komarev.com/ghpvc/?username=walterwhite91&style=for-the-badge&color=7D9FC4&labelColor=3D3846" alt="Profile views" />
 
 </div>
