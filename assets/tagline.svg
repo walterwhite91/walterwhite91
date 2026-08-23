@@ -2,87 +2,241 @@
   <style>
     text { opacity: 0; animation-duration: 26s; animation-timing-function: steps(1, end); animation-iteration-count: infinite; }
 
-    /* AI Systems Engineer — 0.0s -> 2.6s */
-    #w3 { animation-name: cycleW3; }
-    @keyframes cycleW3 {
-      0%, 0.3% { opacity: 0; } 0.6% { opacity: .3; } 0.9% { opacity: 1; }
-      1.2% { opacity: .35; } 1.5% { opacity: 1; }
-      9.2% { opacity: 1; } 10.0% { opacity: 0; } 100% { opacity: 0; }
+    #w3 { animation-name: cyclew3; }
+    @keyframes cyclew3 {
+      0%, 0.000% { opacity: 0; } 0.300% { opacity: .3; } 0.600% { opacity: 1; }
+      0.900% { opacity: .35; } 1.200% { opacity: 1; }
+      9.000% { opacity: 1; } 10.000% { opacity: 0; } 100% { opacity: 0; }
+    }
+    #w6 { animation-name: cyclew6; }
+    @keyframes cyclew6 {
+      0%, 11.923% { opacity: 0; } 12.223% { opacity: .3; } 12.523% { opacity: 1; }
+      12.823% { opacity: .35; } 13.123% { opacity: 1; }
+      24.000% { opacity: 1; } 25.000% { opacity: 0; } 100% { opacity: 0; }
+    }
+    #w1 { animation-name: cyclew1; }
+    @keyframes cyclew1 {
+      0%, 27.692% { opacity: 0; } 27.992% { opacity: .3; } 28.292% { opacity: 1; }
+      28.592% { opacity: .35; } 28.892% { opacity: 1; }
+      35.538% { opacity: 1; } 36.538% { opacity: 0; } 100% { opacity: 0; }
+    }
+    #w4 { animation-name: cyclew4; }
+    @keyframes cyclew4 {
+      0%, 38.846% { opacity: 0; } 39.146% { opacity: .3; } 39.446% { opacity: 1; }
+      39.746% { opacity: .35; } 40.046% { opacity: 1; }
+      54.000% { opacity: 1; } 55.000% { opacity: 0; } 100% { opacity: 0; }
+    }
+    #w2 { animation-name: cyclew2; }
+    @keyframes cyclew2 {
+      0%, 57.692% { opacity: 0; } 57.992% { opacity: .3; } 58.292% { opacity: 1; }
+      58.592% { opacity: .35; } 58.892% { opacity: 1; }
+      71.308% { opacity: 1; } 72.308% { opacity: 0; } 100% { opacity: 0; }
+    }
+    #w5 { animation-name: cyclew5; }
+    @keyframes cyclew5 {
+      0%, 74.615% { opacity: 0; } 74.915% { opacity: .3; } 75.215% { opacity: 1; }
+      75.515% { opacity: .35; } 75.815% { opacity: 1; }
+      87.462% { opacity: 1; } 88.462% { opacity: 0; } 100% { opacity: 0; }
     }
 
-    /* Open Source Contributor — 3.1s -> 6.5s */
-    #w6 { animation-name: cycleW6; }
-    @keyframes cycleW6 {
-      0%, 11.92% { opacity: 0; } 12.22% { opacity: .3; } 12.52% { opacity: 1; }
-      12.82% { opacity: .35; } 13.12% { opacity: 1; }
-      23.8% { opacity: 1; } 25.0% { opacity: 0; } 100% { opacity: 0; }
-    }
-
-    /* Researcher × Builder — 7.2s -> 9.5s */
-    #w1 { animation-name: cycleW1; }
-    @keyframes cycleW1 {
-      0%, 27.69% { opacity: 0; } 27.99% { opacity: .3; } 28.29% { opacity: 1; }
-      28.59% { opacity: .35; } 28.89% { opacity: 1; }
-      35.54% { opacity: 1; } 36.54% { opacity: 0; } 100% { opacity: 0; }
-    }
-
-    /* Backend & Infrastructure Developer — 10.1s -> 14.3s */
-    #w4 { animation-name: cycleW4; }
-    @keyframes cycleW4 {
-      0%, 38.85% { opacity: 0; } 39.15% { opacity: .3; } 39.45% { opacity: 1; }
-      39.75% { opacity: .35; } 40.05% { opacity: 1; }
-      54.0% { opacity: 1; } 55.0% { opacity: 0; } 100% { opacity: 0; }
-    }
-
-    /* Computer Science Undergraduate — 15.0s -> 18.8s */
-    #w2 { animation-name: cycleW2; }
-    @keyframes cycleW2 {
-      0%, 57.69% { opacity: 0; } 57.99% { opacity: .3; } 58.29% { opacity: 1; }
-      58.59% { opacity: .35; } 58.89% { opacity: 1; }
-      71.31% { opacity: 1; } 72.31% { opacity: 0; } 100% { opacity: 0; }
-    }
-
-    /* Building Practical LLM Applications — 19.4s -> 23.0s, then a longer dark pause before the loop wraps */
-    #w5 { animation-name: cycleW5; }
-    @keyframes cycleW5 {
-      0%, 74.62% { opacity: 0; } 74.92% { opacity: .3; } 75.22% { opacity: 1; }
-      75.52% { opacity: .35; } 75.82% { opacity: 1; }
-      87.46% { opacity: 1; } 88.46% { opacity: 0; } 100% { opacity: 0; }
-    }
-
-    .glyph { opacity: 0; animation-duration: 26s; animation-timing-function: steps(1, end); animation-iteration-count: infinite; }
-    #g3 { animation-name: glyphW3; }
-    @keyframes glyphW3 { 0%, 0.2% { opacity: 0; } 0.35% { opacity: .7; } 0.55% { opacity: 0; } 100% { opacity: 0; } }
-    #g6 { animation-name: glyphW6; }
-    @keyframes glyphW6 { 0%, 12.1% { opacity: 0; } 12.3% { opacity: .7; } 12.5% { opacity: 0; } 100% { opacity: 0; } }
-    #g1 { animation-name: glyphW1; }
-    @keyframes glyphW1 { 0%, 27.85% { opacity: 0; } 28.05% { opacity: .7; } 28.25% { opacity: 0; } 100% { opacity: 0; } }
-    #g4 { animation-name: glyphW4; }
-    @keyframes glyphW4 { 0%, 39.0% { opacity: 0; } 39.2% { opacity: .7; } 39.4% { opacity: 0; } 100% { opacity: 0; } }
-    #g2 { animation-name: glyphW2; }
-    @keyframes glyphW2 { 0%, 57.85% { opacity: 0; } 58.05% { opacity: .7; } 58.25% { opacity: 0; } 100% { opacity: 0; } }
-    #g5 { animation-name: glyphW5; }
-    @keyframes glyphW5 { 0%, 74.78% { opacity: 0; } 74.98% { opacity: .7; } 75.18% { opacity: 0; } 100% { opacity: 0; } }
+    .noise { font-size: 15px; }
+    #n1 { animation-name: n1; }
+    @keyframes n1 { 0%, 10.000% { opacity: 0; } 10.020% { opacity: 0.77; } 10.385% { opacity: 0; } 100% { opacity: 0; } }
+    #n2 { animation-name: n2; }
+    @keyframes n2 { 0%, 10.385% { opacity: 0; } 10.405% { opacity: 0.63; } 10.769% { opacity: 0; } 100% { opacity: 0; } }
+    #n3 { animation-name: n3; }
+    @keyframes n3 { 0%, 10.769% { opacity: 0; } 10.789% { opacity: 0.82; } 11.154% { opacity: 0; } 100% { opacity: 0; } }
+    #n4 { animation-name: n4; }
+    @keyframes n4 { 0%, 11.154% { opacity: 0; } 11.174% { opacity: 0.63; } 11.538% { opacity: 0; } 100% { opacity: 0; } }
+    #n5 { animation-name: n5; }
+    @keyframes n5 { 0%, 11.538% { opacity: 0; } 11.558% { opacity: 0.85; } 11.923% { opacity: 0; } 100% { opacity: 0; } }
+    #n6 { animation-name: n6; }
+    @keyframes n6 { 0%, 25.000% { opacity: 0; } 25.020% { opacity: 0.59; } 25.385% { opacity: 0; } 100% { opacity: 0; } }
+    #n7 { animation-name: n7; }
+    @keyframes n7 { 0%, 25.385% { opacity: 0; } 25.405% { opacity: 0.7; } 25.769% { opacity: 0; } 100% { opacity: 0; } }
+    #n8 { animation-name: n8; }
+    @keyframes n8 { 0%, 25.769% { opacity: 0; } 25.789% { opacity: 0.85; } 26.154% { opacity: 0; } 100% { opacity: 0; } }
+    #n9 { animation-name: n9; }
+    @keyframes n9 { 0%, 26.154% { opacity: 0; } 26.174% { opacity: 0.83; } 26.538% { opacity: 0; } 100% { opacity: 0; } }
+    #n10 { animation-name: n10; }
+    @keyframes n10 { 0%, 26.538% { opacity: 0; } 26.558% { opacity: 0.87; } 26.923% { opacity: 0; } 100% { opacity: 0; } }
+    #n11 { animation-name: n11; }
+    @keyframes n11 { 0%, 26.923% { opacity: 0; } 26.943% { opacity: 0.58; } 27.308% { opacity: 0; } 100% { opacity: 0; } }
+    #n12 { animation-name: n12; }
+    @keyframes n12 { 0%, 27.308% { opacity: 0; } 27.328% { opacity: 0.69; } 27.692% { opacity: 0; } 100% { opacity: 0; } }
+    #n13 { animation-name: n13; }
+    @keyframes n13 { 0%, 36.538% { opacity: 0; } 36.558% { opacity: 0.59; } 36.923% { opacity: 0; } 100% { opacity: 0; } }
+    #n14 { animation-name: n14; }
+    @keyframes n14 { 0%, 36.923% { opacity: 0; } 36.943% { opacity: 0.64; } 37.308% { opacity: 0; } 100% { opacity: 0; } }
+    #n15 { animation-name: n15; }
+    @keyframes n15 { 0%, 37.308% { opacity: 0; } 37.328% { opacity: 0.87; } 37.692% { opacity: 0; } 100% { opacity: 0; } }
+    #n16 { animation-name: n16; }
+    @keyframes n16 { 0%, 37.692% { opacity: 0; } 37.712% { opacity: 0.65; } 38.077% { opacity: 0; } 100% { opacity: 0; } }
+    #n17 { animation-name: n17; }
+    @keyframes n17 { 0%, 38.077% { opacity: 0; } 38.097% { opacity: 0.74; } 38.462% { opacity: 0; } 100% { opacity: 0; } }
+    #n18 { animation-name: n18; }
+    @keyframes n18 { 0%, 38.462% { opacity: 0; } 38.482% { opacity: 0.69; } 38.846% { opacity: 0; } 100% { opacity: 0; } }
+    #n19 { animation-name: n19; }
+    @keyframes n19 { 0%, 55.000% { opacity: 0; } 55.020% { opacity: 0.6; } 55.385% { opacity: 0; } 100% { opacity: 0; } }
+    #n20 { animation-name: n20; }
+    @keyframes n20 { 0%, 55.385% { opacity: 0; } 55.405% { opacity: 0.87; } 55.769% { opacity: 0; } 100% { opacity: 0; } }
+    #n21 { animation-name: n21; }
+    @keyframes n21 { 0%, 55.769% { opacity: 0; } 55.789% { opacity: 0.67; } 56.154% { opacity: 0; } 100% { opacity: 0; } }
+    #n22 { animation-name: n22; }
+    @keyframes n22 { 0%, 56.154% { opacity: 0; } 56.174% { opacity: 0.65; } 56.538% { opacity: 0; } 100% { opacity: 0; } }
+    #n23 { animation-name: n23; }
+    @keyframes n23 { 0%, 56.538% { opacity: 0; } 56.558% { opacity: 0.6; } 56.923% { opacity: 0; } 100% { opacity: 0; } }
+    #n24 { animation-name: n24; }
+    @keyframes n24 { 0%, 56.923% { opacity: 0; } 56.943% { opacity: 0.62; } 57.308% { opacity: 0; } 100% { opacity: 0; } }
+    #n25 { animation-name: n25; }
+    @keyframes n25 { 0%, 57.308% { opacity: 0; } 57.328% { opacity: 0.77; } 57.692% { opacity: 0; } 100% { opacity: 0; } }
+    #n26 { animation-name: n26; }
+    @keyframes n26 { 0%, 72.308% { opacity: 0; } 72.328% { opacity: 0.71; } 72.692% { opacity: 0; } 100% { opacity: 0; } }
+    #n27 { animation-name: n27; }
+    @keyframes n27 { 0%, 72.692% { opacity: 0; } 72.712% { opacity: 0.58; } 73.077% { opacity: 0; } 100% { opacity: 0; } }
+    #n28 { animation-name: n28; }
+    @keyframes n28 { 0%, 73.077% { opacity: 0; } 73.097% { opacity: 0.63; } 73.462% { opacity: 0; } 100% { opacity: 0; } }
+    #n29 { animation-name: n29; }
+    @keyframes n29 { 0%, 73.462% { opacity: 0; } 73.482% { opacity: 0.79; } 73.846% { opacity: 0; } 100% { opacity: 0; } }
+    #n30 { animation-name: n30; }
+    @keyframes n30 { 0%, 73.846% { opacity: 0; } 73.866% { opacity: 0.77; } 74.231% { opacity: 0; } 100% { opacity: 0; } }
+    #n31 { animation-name: n31; }
+    @keyframes n31 { 0%, 74.231% { opacity: 0; } 74.251% { opacity: 0.8; } 74.615% { opacity: 0; } 100% { opacity: 0; } }
+    #n32 { animation-name: n32; }
+    @keyframes n32 { 0%, 88.462% { opacity: 0; } 88.482% { opacity: 0.79; } 88.846% { opacity: 0; } 100% { opacity: 0; } }
+    #n33 { animation-name: n33; }
+    @keyframes n33 { 0%, 88.846% { opacity: 0; } 88.866% { opacity: 0.72; } 89.231% { opacity: 0; } 100% { opacity: 0; } }
+    #n34 { animation-name: n34; }
+    @keyframes n34 { 0%, 89.231% { opacity: 0; } 89.251% { opacity: 0.68; } 89.615% { opacity: 0; } 100% { opacity: 0; } }
+    #n35 { animation-name: n35; }
+    @keyframes n35 { 0%, 89.615% { opacity: 0; } 89.635% { opacity: 0.65; } 90.000% { opacity: 0; } 100% { opacity: 0; } }
+    #n36 { animation-name: n36; }
+    @keyframes n36 { 0%, 90.000% { opacity: 0; } 90.020% { opacity: 0.74; } 90.385% { opacity: 0; } 100% { opacity: 0; } }
+    #n37 { animation-name: n37; }
+    @keyframes n37 { 0%, 90.385% { opacity: 0; } 90.405% { opacity: 0.69; } 90.769% { opacity: 0; } 100% { opacity: 0; } }
+    #n38 { animation-name: n38; }
+    @keyframes n38 { 0%, 90.769% { opacity: 0; } 90.789% { opacity: 0.9; } 91.154% { opacity: 0; } 100% { opacity: 0; } }
+    #n39 { animation-name: n39; }
+    @keyframes n39 { 0%, 91.154% { opacity: 0; } 91.174% { opacity: 0.63; } 91.538% { opacity: 0; } 100% { opacity: 0; } }
+    #n40 { animation-name: n40; }
+    @keyframes n40 { 0%, 91.538% { opacity: 0; } 91.558% { opacity: 0.59; } 91.923% { opacity: 0; } 100% { opacity: 0; } }
+    #n41 { animation-name: n41; }
+    @keyframes n41 { 0%, 91.923% { opacity: 0; } 91.943% { opacity: 0.78; } 92.308% { opacity: 0; } 100% { opacity: 0; } }
+    #n42 { animation-name: n42; }
+    @keyframes n42 { 0%, 92.308% { opacity: 0; } 92.328% { opacity: 0.55; } 92.692% { opacity: 0; } 100% { opacity: 0; } }
+    #n43 { animation-name: n43; }
+    @keyframes n43 { 0%, 92.692% { opacity: 0; } 92.712% { opacity: 0.66; } 93.077% { opacity: 0; } 100% { opacity: 0; } }
+    #n44 { animation-name: n44; }
+    @keyframes n44 { 0%, 93.077% { opacity: 0; } 93.097% { opacity: 0.71; } 93.462% { opacity: 0; } 100% { opacity: 0; } }
+    #n45 { animation-name: n45; }
+    @keyframes n45 { 0%, 93.462% { opacity: 0; } 93.482% { opacity: 0.83; } 93.846% { opacity: 0; } 100% { opacity: 0; } }
+    #n46 { animation-name: n46; }
+    @keyframes n46 { 0%, 93.846% { opacity: 0; } 93.866% { opacity: 0.73; } 94.231% { opacity: 0; } 100% { opacity: 0; } }
+    #n47 { animation-name: n47; }
+    @keyframes n47 { 0%, 94.231% { opacity: 0; } 94.251% { opacity: 0.74; } 94.615% { opacity: 0; } 100% { opacity: 0; } }
+    #n48 { animation-name: n48; }
+    @keyframes n48 { 0%, 94.615% { opacity: 0; } 94.635% { opacity: 0.68; } 95.000% { opacity: 0; } 100% { opacity: 0; } }
+    #n49 { animation-name: n49; }
+    @keyframes n49 { 0%, 95.000% { opacity: 0; } 95.020% { opacity: 0.63; } 95.385% { opacity: 0; } 100% { opacity: 0; } }
+    #n50 { animation-name: n50; }
+    @keyframes n50 { 0%, 95.385% { opacity: 0; } 95.405% { opacity: 0.75; } 95.769% { opacity: 0; } 100% { opacity: 0; } }
+    #n51 { animation-name: n51; }
+    @keyframes n51 { 0%, 95.769% { opacity: 0; } 95.789% { opacity: 0.65; } 96.154% { opacity: 0; } 100% { opacity: 0; } }
+    #n52 { animation-name: n52; }
+    @keyframes n52 { 0%, 96.154% { opacity: 0; } 96.174% { opacity: 0.55; } 96.538% { opacity: 0; } 100% { opacity: 0; } }
+    #n53 { animation-name: n53; }
+    @keyframes n53 { 0%, 96.538% { opacity: 0; } 96.558% { opacity: 0.56; } 96.923% { opacity: 0; } 100% { opacity: 0; } }
+    #n54 { animation-name: n54; }
+    @keyframes n54 { 0%, 96.923% { opacity: 0; } 96.943% { opacity: 0.87; } 97.308% { opacity: 0; } 100% { opacity: 0; } }
+    #n55 { animation-name: n55; }
+    @keyframes n55 { 0%, 97.308% { opacity: 0; } 97.328% { opacity: 0.57; } 97.692% { opacity: 0; } 100% { opacity: 0; } }
+    #n56 { animation-name: n56; }
+    @keyframes n56 { 0%, 97.692% { opacity: 0; } 97.712% { opacity: 0.89; } 98.077% { opacity: 0; } 100% { opacity: 0; } }
+    #n57 { animation-name: n57; }
+    @keyframes n57 { 0%, 98.077% { opacity: 0; } 98.097% { opacity: 0.57; } 98.462% { opacity: 0; } 100% { opacity: 0; } }
+    #n58 { animation-name: n58; }
+    @keyframes n58 { 0%, 98.462% { opacity: 0; } 98.482% { opacity: 0.88; } 98.846% { opacity: 0; } 100% { opacity: 0; } }
+    #n59 { animation-name: n59; }
+    @keyframes n59 { 0%, 98.846% { opacity: 0; } 98.866% { opacity: 0.83; } 99.231% { opacity: 0; } 100% { opacity: 0; } }
+    #n60 { animation-name: n60; }
+    @keyframes n60 { 0%, 99.231% { opacity: 0; } 99.251% { opacity: 0.86; } 99.615% { opacity: 0; } 100% { opacity: 0; } }
+    #n61 { animation-name: n61; }
+    @keyframes n61 { 0%, 99.615% { opacity: 0; } 99.635% { opacity: 0.79; } 100.000% { opacity: 0; } 100% { opacity: 0; } }
 
     @media (prefers-reduced-motion: reduce) {
-      text, .glyph { animation: none !important; opacity: 0; }
+      text { animation: none !important; opacity: 0; }
       #w3 { opacity: 1; }
     }
   </style>
   <g text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="18" font-weight="500" fill="#7d9fc4">
-    <text id="w1" x="390" y="21">Researcher × Builder</text>
-    <text id="w2" x="390" y="21">Computer Science Undergraduate</text>
     <text id="w3" x="390" y="21">AI Systems Engineer</text>
-    <text id="w4" x="390" y="21">Backend &amp; Infrastructure Developer</text>
-    <text id="w5" x="390" y="21">Building Practical LLM Applications</text>
     <text id="w6" x="390" y="21">Open Source Contributor</text>
+    <text id="w1" x="390" y="21">Researcher × Builder</text>
+    <text id="w4" x="390" y="21">Backend &amp; Infrastructure Developer</text>
+    <text id="w2" x="390" y="21">Computer Science Undergraduate</text>
+    <text id="w5" x="390" y="21">Building Practical LLM Applications</text>
   </g>
-  <g text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="17" font-weight="500" letter-spacing="1.2">
-    <text id="g3" class="glyph" x="390" y="21" fill="#9f8cff">0X9AF2 // M7N4Q8</text>
-    <text id="g6" class="glyph" x="390" y="21" fill="#7d9fc4">KQ7M2N9V · X4P8L1TZ</text>
-    <text id="g1" class="glyph" x="390" y="21" fill="#9f8cff">R3S#A8C4E5 × B7I1D3R</text>
-    <text id="g4" class="glyph" x="390" y="21" fill="#7d9fc4">D3V8L0P3R_91 // A1</text>
-    <text id="g2" class="glyph" x="390" y="21" fill="#9f8cff">C5 · U9N4D3R6</text>
-    <text id="g5" class="glyph" x="390" y="21" fill="#7d9fc4">LL2M // B7U1LD9</text>
+  <g text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" letter-spacing=".6">
+    <text id="n1" class="noise" x="390" y="21" fill="#9f8cff">RPOIG=8F // @1CBFNO6#B9M^*~80O2@RAK~1</text>
+    <text id="n2" class="noise" x="390" y="21" fill="#7d9fc4">FYGWW#QC_38 // HYF9S%$X!M^E</text>
+    <text id="n3" class="noise" x="390" y="21" fill="#9f8cff">GYR3%XKXWN+R~=*E#%K8_ // PK3Y</text>
+    <text id="n4" class="noise" x="390" y="21" fill="#7d9fc4">DOCUZREN!^UN*5Z*3JQIP98Q@1@ZXOI65F</text>
+    <text id="n5" class="noise" x="390" y="21" fill="#9f8cff">K=1#EYY#37Q9A=_H=8R*VHS1K3A__Q6L</text>
+    <text id="n6" class="noise" x="390" y="21" fill="#7d9fc4">6#MJXK87A#U5BHXTPDP!FF_ // 5E8II+49K</text>
+    <text id="n7" class="noise" x="390" y="21" fill="#9f8cff">_~M^TZ+*X272HPOEVB@9O@OAE^%DOE</text>
+    <text id="n8" class="noise" x="390" y="21" fill="#9f8cff">PR+5N8I_!!4P40 // MGG+1W103_D=**GD</text>
+    <text id="n9" class="noise" x="390" y="21" fill="#9f8cff">MM82I1LR3PE29GD*8AFPK054N</text>
+    <text id="n10" class="noise" x="390" y="21" fill="#9f8cff">AYQ3S1~_9+^5JMSND@8D // UDD@467K</text>
+    <text id="n11" class="noise" x="390" y="21" fill="#9f8cff">#E=PZH!P@#C$ // F0+@!7UQN+^</text>
+    <text id="n12" class="noise" x="390" y="21" fill="#7d9fc4">UEA3$!GE8N6QIWEPXSK28^T$* // 7A+9</text>
+    <text id="n13" class="noise" x="390" y="21" fill="#9f8cff">HG9JRS#N^VN=%Q65QDF%1RCAVI</text>
+    <text id="n14" class="noise" x="390" y="21" fill="#7d9fc4">^19AHE~J8CX@9J1ICTXCWN=P+GW90$</text>
+    <text id="n15" class="noise" x="390" y="21" fill="#9f8cff">L0BLV0+PRK~GYC // 4OM3WTOOB+</text>
+    <text id="n16" class="noise" x="390" y="21" fill="#9f8cff">RW*6Z=8VBHQL@QCG#1W_U1#6HY!MQC^1A7</text>
+    <text id="n17" class="noise" x="390" y="21" fill="#9f8cff">1E+V$U+H_T6T+0UZ~S9IM0+Y=L$</text>
+    <text id="n18" class="noise" x="390" y="21" fill="#9f8cff">SN1@#*U322 // =N64K+FS6+%$VFP=</text>
+    <text id="n19" class="noise" x="390" y="21" fill="#9f8cff">4$E30%!M^~Y // 5ZPJ*~AG1OL~73</text>
+    <text id="n20" class="noise" x="390" y="21" fill="#9f8cff">I3+79#U2$_61 // 92K42QP%R75%PR2E^</text>
+    <text id="n21" class="noise" x="390" y="21" fill="#9f8cff">JOY~J^NE00V830D // N0Y@~B!Y4</text>
+    <text id="n22" class="noise" x="390" y="21" fill="#7d9fc4">88#O5OR15BYV+=Z_K3I$8BZ@!+BF</text>
+    <text id="n23" class="noise" x="390" y="21" fill="#7d9fc4">DQYUN3UVYR0QF4B8DWO*E*CB</text>
+    <text id="n24" class="noise" x="390" y="21" fill="#9f8cff">JPI4+H!N3~QXK##^HKTG@BT!=YZ^ME@</text>
+    <text id="n25" class="noise" x="390" y="21" fill="#9f8cff">T=#H!CW81+XE6*VA05G1X%3^J1L_7*R$8</text>
+    <text id="n26" class="noise" x="390" y="21" fill="#7d9fc4">PFR2P3!$+YVB5UL5NWQVR#~R9A7</text>
+    <text id="n27" class="noise" x="390" y="21" fill="#7d9fc4">9P~4*^52BFSO // Z~PT+@X497W19VW~3</text>
+    <text id="n28" class="noise" x="390" y="21" fill="#9f8cff">H8~LMN4R_@7#SGMSOXLTA^8IRCD</text>
+    <text id="n29" class="noise" x="390" y="21" fill="#9f8cff">5GA!S442VLDQ4HEZ5E!%=DJJ!TFPH90#</text>
+    <text id="n30" class="noise" x="390" y="21" fill="#7d9fc4">2T@1T!$D$GN%N // Q+FKPL9EKA02~#4S</text>
+    <text id="n31" class="noise" x="390" y="21" fill="#7d9fc4">=OQ%@+M1H8O*J // RJEDKT#!S2</text>
+    <text id="n32" class="noise" x="390" y="21" fill="#7d9fc4">852F#C1U#QBFO=!@B=R!CL47*2RL@1</text>
+    <text id="n33" class="noise" x="390" y="21" fill="#9f8cff">W0VU+GKV0~5S+Z9C3FUQ // UHZ6A+830</text>
+    <text id="n34" class="noise" x="390" y="21" fill="#7d9fc4">2DNR9IS2~5HB%#P^KT9A90FOH3H*J5^S</text>
+    <text id="n35" class="noise" x="390" y="21" fill="#7d9fc4">P39JYM#6IER0V6RAS_T@@+5J284WV</text>
+    <text id="n36" class="noise" x="390" y="21" fill="#7d9fc4">M~P!YO0C // U4^YY+*J5CI6@VG2G73</text>
+    <text id="n37" class="noise" x="390" y="21" fill="#9f8cff">4QV$~Z*FV=8YU%^58C$EP%=</text>
+    <text id="n38" class="noise" x="390" y="21" fill="#9f8cff">G%^G2K~TBCUDSWX1JP70!=LKLF$Y</text>
+    <text id="n39" class="noise" x="390" y="21" fill="#9f8cff">3%Q3Q+A3S=8KE2W@T%1~Q3TMY</text>
+    <text id="n40" class="noise" x="390" y="21" fill="#7d9fc4">W!S~SB+ZRA!=D#5SO#WO%M$Q=_+=I%G</text>
+    <text id="n41" class="noise" x="390" y="21" fill="#7d9fc4">2C@X_IFSU0LMI8X7 // 6RKQ4SVH3EJO=_=Z9X</text>
+    <text id="n42" class="noise" x="390" y="21" fill="#9f8cff">X==Q@Y%XG=O4B$9U$O*E%3~T*0HIC</text>
+    <text id="n43" class="noise" x="390" y="21" fill="#7d9fc4">GP8IY3X+~80@_J0*G5 // $0RC~</text>
+    <text id="n44" class="noise" x="390" y="21" fill="#9f8cff">G=X8*WDZRM // H3F+N*%#BDVPI!NE9</text>
+    <text id="n45" class="noise" x="390" y="21" fill="#9f8cff">J#ARJI8QLH+BIAW // P@UBLQDI07HE</text>
+    <text id="n46" class="noise" x="390" y="21" fill="#9f8cff">6O$C_+7T3*BD4Z1=G5^2EFU#JEIR$</text>
+    <text id="n47" class="noise" x="390" y="21" fill="#7d9fc4">#7S36#1G~H**9_N12O0V3Z0_GU1U</text>
+    <text id="n48" class="noise" x="390" y="21" fill="#9f8cff">4EFFF1GXI9D@99V+H0W+1_DS#TWG!6NJ</text>
+    <text id="n49" class="noise" x="390" y="21" fill="#9f8cff">9XHR!O19$$=*9B#+~RBLR~TVWAL</text>
+    <text id="n50" class="noise" x="390" y="21" fill="#7d9fc4">J%BF7NY03VKXT_U!#FDJK$D</text>
+    <text id="n51" class="noise" x="390" y="21" fill="#7d9fc4">#20RN6H // W1HS==@57+TCOZ#DANTNIQ</text>
+    <text id="n52" class="noise" x="390" y="21" fill="#7d9fc4">IY8^O69+WEZC1B3E // U!1!Z^%0</text>
+    <text id="n53" class="noise" x="390" y="21" fill="#7d9fc4">$3~XF1GP1@Z7FZTVOVKE6%H7</text>
+    <text id="n54" class="noise" x="390" y="21" fill="#7d9fc4">_*JPGJQML#J*EL%53! // @2=!*%$U%</text>
+    <text id="n55" class="noise" x="390" y="21" fill="#7d9fc4">TR@DW6ET32CDXSE*F$#6Y3@9C2!*MU#4</text>
+    <text id="n56" class="noise" x="390" y="21" fill="#7d9fc4">V^F6*LCP^2277$ // KXXSY0V=#</text>
+    <text id="n57" class="noise" x="390" y="21" fill="#9f8cff">=YSQ_+#JVF@+JWT*~+ZI#^FT9Y*VI+</text>
+    <text id="n58" class="noise" x="390" y="21" fill="#9f8cff">+16XBXTLNV5MOIJESG687C+V$I#YJKL~</text>
+    <text id="n59" class="noise" x="390" y="21" fill="#9f8cff">2C0X=_P2$S2O8PT4MX=!23SY670KM#IQD</text>
+    <text id="n60" class="noise" x="390" y="21" fill="#9f8cff">7HSFKR26J1FO2WB0DZ6 // XPYFXOBUG^*VJI</text>
+    <text id="n61" class="noise" x="390" y="21" fill="#9f8cff">^42$AFBQNJ9_#71HSPTHDP0%$3EH5#8B%6</text>
   </g>
 </svg>
